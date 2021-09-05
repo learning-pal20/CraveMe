@@ -1,0 +1,234 @@
+/* Css Reset*/
+*{
+    padding:0px;
+    margin:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navbar*/
+#navbar{
+
+    position:sticky;
+    align-items: center;
+    display:flex;
+    top:0px;
+    
+
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top:0px;
+    left:0px;
+
+}
+#logo{
+    margin:5px 10px;
+    
+}
+
+#logo img{
+    height:59px;
+    margin:3px 6px;
+    animation-name: LOGO;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes LOGO {
+    from{
+        width:60px;
+    }
+    to{
+        width: 70px;
+    }
+    
+}
+
+#navbar ul{
+ display:flex;
+}
+
+#navbar ul li {
+    list-style:none;
+    margin: 2px 3px;
+}
+
+#navbar ul li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding:2px 4px;
+    color:white;
+    border-radius:20px;
+    
+}
+
+#navbar ul li a:hover{
+    border:2 px solid white;
+    color:black;
+    background-color: white;
+    
+}
+
+/*HOME Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+color: rgb(235, 240, 233);
+justify-content: center;
+height: 350px;
+
+}
+#home::before{
+    content:"";
+    background:url('../images/jalebi.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    opacity: 0.9;
+    top:0px;
+    left:0px;
+
+}
+
+#homepara{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:'IM Fell French Canon SC', serif;
+    font-size: 1.2rem;
+    
+    
+    
+}
+.h-primary{
+    font-size: 2.3rem;
+    margin-bottom: 17px;
+    text-decoration: underline;
+   
+   
+}
+.but{
+    margin-top: 12px;
+    width: 7rem;
+    font-size: 1rem;
+    font-weight: 560;
+    border-radius: 12px;
+    border-color: teal;
+    padding:4px 4px;
+}
+.but:hover{
+    border:2 px solid white;
+    color:rgb(248, 245, 245);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#servicesection{
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 67px;
+}
+#services{
+    display:flex;
+}
+.servicebox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px 3px;
+    border:2px solid rgb(150, 98, 98);
+    border-radius: 15px;
+    background-color: rgb(247, 223, 227);
+    
+
+
+}
+.servicebox img{
+    margin:3px 3px;
+    border-radius: 8px;
+}
+.servicebox p{
+    margin:9px 16px;
+}
+
+#clientsection
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+}
+#clientss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#clientss::before{
+    content:"";
+    background: url(../images/backme.jpg) no-repeat center center/cover;
+    position:absolute;
+    width: 100%;
+    height:350px;
+    z-index: -1;
+    opacity:0.4;
+    margin-top: 110px;
+    align-items: center;
+    justify-content: center;
+}
+.client{
+    width: 120px;
+    height:110px;
+    margin: 2px 65px;
+}
+#moreinfo{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:350px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+}
+#moreinfo::before{
+content:"";
+background:url(../images/contactus.jpg) no-repeat center center/cover;
+position: absolute;
+width: 100%;
+height:360px;
+z-index:-1;
+opacity:0.8;
+}
+.Contact-box{
+    display:flex;
+    flex-direction: column;
+    
+    margin-bottom: 13px;
+    Width:350px;
+    
+}
+.Contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+.footer{
+    margin-top: 12px;
+    height: 30px;
+    width: 100%;
+}
+
